@@ -16,9 +16,12 @@ class Tutorial:
     def mainDebug():
         handle = win32gui.GetDesktopWindow()
         # we could use this handle to deal with desktop window
-        print(handle)   # 65552
+        print(handle)   
 
 
 if __name__ == '__main__':
     main = Tutorial()
     main.mainDebug()
+"""
+# 65552
+"""
