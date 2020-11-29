@@ -7,6 +7,7 @@ time: 2020/11/29 12:47
 software: PyCharm
 
 Description:
+    get the handle of desktop window
 """
 import win32gui
 
