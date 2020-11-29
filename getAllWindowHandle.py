@@ -11,6 +11,7 @@ Description:
 import win32gui
 
 
+# method 1
 class Win32:
     @staticmethod
     def tutorial():
@@ -20,6 +21,24 @@ class Win32:
         for hwnd in hWndList:
             title = win32gui.GetWindowText(hwnd)
             print(title)
+
+
+if __name__ == '__main__':
+    main = Win32()
+    main.tutorial()
+
+
+# method 2:
+class Win32:
+    @staticmethod
+    def tutorial():
+        hWndList = []
+        win32gui.EnumWindows(Win32.hwnd, hWndList)
+        print(hWndList)
+
+    @staticmethod
+    def hwnd(handle, params):
+        return params.append(handle)
 
 
 if __name__ == '__main__':
