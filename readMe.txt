@@ -1,0 +1,3 @@
+win32gui.IsWindowVisible(hWnd)查看当前窗口是否具有WS_VISIBLE的类型，hwnd是窗口的句柄
+win32gui.GetWindowText（hwnd）获取当前窗口的名称
+win32gui和win32api均可以实现鼠标点击事件
